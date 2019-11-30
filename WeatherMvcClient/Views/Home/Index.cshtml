@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Weather file upload";
+}
+
+<div class="text-left">
+    <h1 class="display-4">Weather file upload</h1>
+    <div class="mb-3">
+        Please upload .txt file having city id and city name in below format
+        <br />
+        2643741=City of London
+        <br />
+        2988507=Paris
+        <br />
+        2964574=Dublin
+        <br />
+        4229546=Washington
+        <br />
+        5128581=New York
+        <br />
+        1273294=Delhi
+        <br />
+        1275339=Mumbai
+        <br />
+        6539761=Rome
+        <br />
+        2950159=Berlin
+        <br />
+        292223=Dubai
+    </div>
+    <p>Find a sample.txt file inside WeatherSampleFile folder on the root.</p>
+</div>
+
+<form method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <input type="file" id="files" name="files" />
+    </div>
+    <div class="mt-3">
+        <button type="submit" class="btn btn-primary">Upload weather file</button>
+    </div>
+</form>
